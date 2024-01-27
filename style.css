@@ -1,3 +1,70 @@
-body {
-    background-color: #ff54;
+@font-face {
+    font-family: 'SingleDay';
+    src: url('./SingleDay-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'PoorStory';
+    src: url('./PoorStory-Regular.ttf') format('truetype');
+}
+body>header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*border-bottom: 1px solid rgba(0,0,0,.5);*/
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    z-index:1
+}
+body>header h1 {
+    min-width: 50vw;
+    font-family: 'SingleDay', sans-serif;
+}
+@media screen and (min-width: 768px) {
+    body>main {
+	margin: 50px
+    }
+}
+body>header a[href] {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    background: #fff;
+    transition: color .2s, background .2s
+}
+body a[href] {
+    text-decoration: underline;
+    cursor: pointer;
+    color: red
+}
+body p {
+    font-size: 24px;
+    font-family: 'PoorStory'
+}
+body h1 {
+    font-size: 28px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 10px
+}
+body>header nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+    font-size: 1.2em
+}
+
+body>header nav a[href] {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-left: 1px solid rgba(0,0,0,.1);
+    padding: 0.1em;
+    transition: margin-bottom .2s, color .2s, background .2s;
+}
+
+body>header nav a[href]:hover {
+    margin-bottom: -1em;
+    background: #000;
+    color: #fff;
+}
+
