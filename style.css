@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'SingleDay';
-    src: url('./SingleDay-Regular.ttf') format('truetype');
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Black.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'PoorStory';
-    src: url('./PoorStory-Regular.ttf') format('truetype');
+    font-family: 'Lato';
+    src: url('./fonts/Lato.ttf') format('truetype');
 }
 body>header {
     display: flex;
@@ -16,7 +16,7 @@ body>header {
 }
 body>header h1 {
     min-width: 50vw;
-    font-family: 'SingleDay', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 @media screen and (min-width: 768px) {
     body>main {
@@ -36,8 +36,8 @@ body a[href] {
     color: red
 }
 body p {
-    font-size: 24px;
-    font-family: 'PoorStory'
+    font-size: 19px;
+    font-family: 'Lato'
 }
 body h1 {
     font-size: 28px;
